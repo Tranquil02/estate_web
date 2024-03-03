@@ -37,7 +37,7 @@ const Profile = () => {
 
   const dispatch = useDispatch();
 
-  console.log(formData);
+  // console.log(formData);
   // console.log(userListings);
 
   useEffect(() => {
@@ -163,7 +163,7 @@ const Profile = () => {
 
         const data = await res.json();
         if (data.success === false) {
-          console.log(error.message);
+          // console.log(error.message);
           return; 
         }
 
@@ -172,7 +172,7 @@ const Profile = () => {
 
 
     } catch (error) {
-      console.log(error.message);      
+      // console.log(error.message);      
     }
 
   };

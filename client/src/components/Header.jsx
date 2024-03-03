@@ -31,12 +31,12 @@ const Header = () => {
 
 
   return (
-    <header className="bg-green-200 shadow-md">
+    <header className="bg-gradient-to-r from-cyan-500 to-blue-500 shadow-md">
       <div className="flex justify-between items-center max-w-6xl mx-auto p-3">
         <Link to="/">
           <h1 className="font-bold text-sm sm:text-xl flex flex-wrap">
-            <span className="text-slate-500">Prime</span>
-            <span className="text-slate-700">Estate</span>
+            <span className="text-red-600">Prime</span>
+            <span className="text-slate-900">Estate</span>
           </h1>
         </Link>
         <form onSubmit={handleSubmit} className="bg-slate-100 p-3 rounded-lg flex items-center">
@@ -53,14 +53,14 @@ const Header = () => {
 
           </button>
         </form>
-        <ul className="flex gap-4">
+        <ul className="flex gap-4 items-center ">
           <Link to="/">
-            <li className="hidden sm:inline text-slate-700 hover:underline">
+            <li className="hidden sm:inline text-rgb(7 2 38) text-lg font-medium hover:underline">
               Home
             </li>
           </Link>
           <Link to="/about">
-            <li className="hidden sm:inline text-slate-700 hover:underline">
+            <li className="hidden sm:inline text-rgb(7 2 38) text-lg font-medium hover:underline">
               About
             </li>
           </Link>
@@ -70,10 +70,10 @@ const Header = () => {
               <img
                 src={currentUser.avatar}
                 alt="avatar"
-                className="rounded-full h-7 w-7 object-cover"
+                className="rounded-full h-12 w-12 object-cover"
               />
             ) : (
-              <li className="text-slate-700 hover:underline">Sign In</li>
+              <li className="bg-slate-200 p-2 rounded-md hover:underline">Sign In</li>
             )}
           </Link>
         </ul>

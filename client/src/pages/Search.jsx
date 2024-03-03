@@ -19,7 +19,7 @@ export default function Search() {
   const [showMore, setShowMore] = useState(false);
 
 
-  console.log(sidebardata);
+  // console.log(sidebardata);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(location.search);
@@ -131,7 +131,7 @@ export default function Search() {
     setListings([...listings, ...data]);
   };
   return (
-    <div className='flex flex-col md:flex-row'>
+    <div className='flex flex-col md:flex-row bg-slate-200'>
       <div className='p-7  border-b-2 md:border-r-2 md:min-h-screen'>
         <form onSubmit={handleSubmit} className='flex flex-col gap-8'>
           <div className='flex items-center gap-2'>
